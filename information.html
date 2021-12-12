@@ -30,12 +30,30 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <link href="css/memenu.css" rel="stylesheet" type="text/css" media="all" />
     <script type="text/javascript" src="js/memenu.js"></script>
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             $(".memenu").memenu();
         });
     </script>
     <!--dropdown-->
     <script src="js/jquery.easydropdown.js"></script>
+    <style>
+        .skyblue li>a,
+        .skyblue>li.showhide span {
+            color: #000;
+        }
+
+        .main_m {
+            top: 220px;
+        }
+
+        .logo {
+            border-bottom: 1px solid #ddd;
+        }
+
+        .logo a h1 {
+            color: black;
+        }
+    </style>
 </head>
 
 <body>
@@ -59,7 +77,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <div class="cart box_1">
                         <a href="checkout.html">
                             <div class="total">
-                                <span class="simpleCart_total"></span></div>
+                                <span class="simpleCart_total"></span>
+                            </div>
                             <img src="images/cart-1.png" alt="" />
                         </a>
                         <p><a href="checkout.html" class="simpleCart_empty">购物车</a></p>
@@ -210,7 +229,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                                 <li><a href="products.html">20夏季</a></li>
                                             </ul>
                                         </div>
-                                       
+
                             <li class="grid"><a href="information.html">个人信息</a>
                             </li>
                         </ul>
@@ -219,7 +238,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </div>
                 <div class="col-md-3 header-right">
                     <div class="search-bar">
-                        <input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
+                        <input type="text" value="Search" onfocus="this.value = '';"
+                            onblur="if (this.value == '') {this.value = 'Search';}">
                         <input type="submit" value="">
                     </div>
                 </div>
@@ -228,221 +248,233 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </div>
     </div>
     <!--bottom-header-->
-    <!--start-breadcrumbs-->
-    <div class="breadcrumbs">
-        <div class="container">
-            <div class="breadcrumbs-main">
-                <ol class="breadcrumb">
-                    <li><a href="index.html">主 页</a></li>
-                    <li class="active">个人信息</li>
-                </ol>
+    <div class="main_m">
+        <!--start-breadcrumbs-->
+        <div class="breadcrumbs">
+            <div class="container">
+                <div class="breadcrumbs-main">
+                    <ol class="breadcrumb">
+                        <li><a href="index.html">主 页</a></li>
+                        <li class="active">个人信息</li>
+                    </ol>
+                </div>
             </div>
         </div>
-    </div>
-    <!--end-breadcrumbs-->
-    <!--register-starts-->
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-3">
-                <div class="panel panel-default">
+        <!--end-breadcrumbs-->
+
+        <!--register-starts-->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div align="center">
+                                <img src="images/timg.jpg" class="rounded-circle" width="128" height="128">
+                                <div class="I">叁</div>
+                            </div>
+                            <div class="I_">
+                                <div class="I_t"><span class="glyphicon glyphicon-home"></span>重庆市永川区红河大道319</div>
+                                <div class="I_t"><span class="glyphicon glyphicon-list-alt"></span>邮政编码：402160</div>
+                                <div class="I_t"><span class="glyphicon glyphicon-phone"></span>联系电话：123456789</div>
+                                <div class="I_t"><span class="glyphicon glyphicon-envelope"></span>123456@qq.com</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-9">
+                    <!--
+                <div class="panel panel-default ">
                     <div class="panel-heading">
-                        <div align="center">
-                            <img src="images/timg.jpg" class="rounded-circle" width="128" height="128">
-                            <div class="I">叁</div>
-                        </div>
-                        <div class="I_">
-                            <div class="I_t"><span class="glyphicon glyphicon-home"></span>重庆市永川区红河大道319</div>
-                            <div class="I_t"><span class="glyphicon glyphicon-list-alt"></span>邮政编码：402160</div>
-                            <div class="I_t"><span class="glyphicon glyphicon-phone"></span>联系电话：123456789</div>
-                            <div class="I_t"><span class="glyphicon glyphicon-envelope"></span>123456@qq.com</div>
-                        </div>
+                        <p class="text-center">专业技能扎实</p>
+                        <p class="text-center">参与各种比赛并获得奖项</p>
+                        <p class="text-center">取得行业认证</p>
                     </div>
-                </div>
-            </div>
-            <div class="col-sm-9">
-                <div  class="panel-group" id="accordion">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-									历史记录
-								</a>
-                            </h4>
-                        </div>
-                        <div id="collapseOne" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                暂无
+                </div>-->
+                    <div class="panel-group" id="accordion">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                        历史记录
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    暂无
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-									收货地址
-								</a>
-                            </h4>
-                        </div>
-                        <div id="collapseTwo" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                重庆市**区**街道**号
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                        收货地址
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    重庆市**区**街道**号
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-									心愿单
-								</a>
-                            </h4>
-                        </div>
-                        <div id="collapseThree" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                心愿单暂无内容
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                                        心愿单
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    心愿单暂无内容
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <script src="js/bootstrap.js"></script>
-    <!--register-end-->
-    <!--information-starts-->
-     <div class="information">
-        <div class="container">
-            <div class="infor-top">
-                <div class="col-md-3 infor-left">
-                    <h3>需要帮助？</h3>
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <p><span class="iconfont icon-dianhua"></span>请致电我们 4006001913</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <p><span class="iconfont icon--kefu"></span>与客户服务人员沟通</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <p><span class="iconfont icon-youjian"></span>联系我们</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="contact.html">
-                                <p><span class="iconfont icon-weizhi"></span>查找精品店</p>
-                            </a>
-                        </li>
-                    </ul>
+        <script src="js/bootstrap.js"></script>
+        <!--register-end-->
+        <!--information-starts-->
+        <div class="information">
+            <div class="container">
+                <div class="infor-top">
+                    <div class="col-md-3 infor-left">
+                        <h3>需要帮助？</h3>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <p><span class="iconfont icon-dianhua"></span>请致电我们 4006001913</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p><span class="iconfont icon--kefu"></span>与客户服务人员沟通</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p><span class="iconfont icon-youjian"></span>联系我们</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="contact.html">
+                                    <p><span class="iconfont icon-weizhi"></span>查找精品店</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 infor-left">
+                        <h3>公司</h3>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <p>Unnamed集团</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>Unnamed基金会</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>Luna Rossa</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="contact.html">
+                                    <p>持续性</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>工作机会</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 infor-left">
+                        <h3>法律条款</h3>
+                        <ul>
+                            <li>
+                                <a href="account.html">
+                                    <p>法务通知</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>隐私政策</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>Cookie政策</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>销售条款</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>网站地图</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 infor-left">
+                        <h3>专属服务</h3>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <p><span class="iconfont icon-dianhua"></span>免费标准配送</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p><span class="iconfont icon--kefu"></span>免费礼品包装</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p><span class="iconfont icon-youjian"></span>预约门店服务</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
                 </div>
-                <div class="col-md-3 infor-left">
-                    <h3>公司</h3>
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <p>Unnamed集团</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <p>Unnamed基金会</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <p>Luna Rossa</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="contact.html">
-                                <p>持续性</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <p>工作机会</p>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-3 infor-left">
-                    <h3>法律条款</h3>
-                    <ul>
-                        <li>
-                            <a href="account.html">
-                                <p>法务通知</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <p>隐私政策</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <p>Cookie政策</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <p>销售条款</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <p>网站地图</p>
-                            </a>
-                        </li>
-                    </ul> 
-                </div>
-                <div class="col-md-3 infor-left">
-                    <h3>专属服务</h3>
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <p><span class="iconfont icon-dianhua"></span>免费标准配送</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <p><span class="iconfont icon--kefu"></span>免费礼品包装</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <p><span class="iconfont icon-youjian"></span>预约门店服务</p>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="clearfix"></div>
             </div>
         </div>
-    </div>
-    <!--information-end-->
-    <!--footer-starts-->
-    <div class="footer">
-        <div class="container">
-            <div class="footer-top">
-                <div class="col-md-6 footer-left">
-                    <form>
-                        <input type="text" value="Enter Your Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter Your Email';}">
-                        <input type="submit" value="订阅">
-                    </form>
+        <!--information-end-->
+        <!--footer-starts-->
+        <div class="footer">
+            <div class="container">
+                <div class="footer-top">
+                    <div class="col-md-6 footer-left">
+                        <form>
+                            <input type="text" value="Enter Your Email" onfocus="this.value = '';"
+                                onblur="if (this.value == '') {this.value = 'Enter Your Email';}">
+                            <input type="submit" value="订阅">
+                        </form>
+                    </div>
+                    <div class="col-md-6 footer-right">
+                        <strong>配送至 中国大陆/简体中文
+                            <a target="_blank" href="http://sc.chinaz.com/moban/"></a>
+                        </strong>
+                    </div>
+                    <div class="clearfix"></div>
                 </div>
-                <div class="col-md-6 footer-right">
-                    <strong>配送至 中国大陆/简体中文
-                        <a target="_blank" href="javascript:void();"></a>
-                    </strong>
-                </div>
-                <div class="clearfix"></div>
             </div>
         </div>
+        <!--footer-end-->
     </div>
-    <!--footer-end-->
 </body>
 
 </html>

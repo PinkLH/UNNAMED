@@ -30,12 +30,26 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <link href="css/memenu.css" rel="stylesheet" type="text/css" media="all" />
     <script type="text/javascript" src="js/memenu.js"></script>
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             $(".memenu").memenu();
         });
     </script>
     <!--dropdown-->
     <script src="js/jquery.easydropdown.js"></script>
+    <style>
+        .skyblue li>a, .skyblue>li.showhide span {
+            color: #000;
+        }
+        .main_m{
+            top: 220px;
+        }
+        .logo{
+            border-bottom:1px solid #ddd;
+        }
+        .logo a h1{
+            color: black;
+        }
+    </style>
 </head>
 
 <body>
@@ -59,7 +73,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <div class="cart box_1">
                         <a href="checkout.html">
                             <div class="total">
-                                <span class="simpleCart_total"></span></div>
+                                <span class="simpleCart_total"></span>
+                            </div>
                             <img src="images/cart-1.png" alt="" />
                         </a>
                         <p><a href="checkout.html" class="simpleCart_empty">购物车</a></p>
@@ -210,8 +225,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                                 <li><a href="products.html">20夏季</a></li>
                                             </ul>
                                         </div>
-                                       
-                            
+
+
                             <li class="grid"><a href="information.html">个人信息</a>
                             </li>
                         </ul>
@@ -220,7 +235,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </div>
                 <div class="col-md-3 header-right">
                     <div class="search-bar">
-                        <input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
+                        <input type="text" value="Search" onfocus="this.value = '';"
+                            onblur="if (this.value == '') {this.value = 'Search';}">
                         <input type="submit" value="">
                     </div>
                 </div>
@@ -229,195 +245,198 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </div>
     </div>
     <!--bottom-header-->
-    <!--start-breadcrumbs-->
-    <div class="breadcrumbs">
-        <div class="container">
-            <div class="breadcrumbs-main">
-                <ol class="breadcrumb">
-                    <li><a href="index.html">主 页</a></li>
-                    <li class="active">账户</li>
-                </ol>
+    <div class="main_m">
+        <!--start-breadcrumbs-->
+        <div class="breadcrumbs">
+            <div class="container">
+                <div class="breadcrumbs-main">
+                    <ol class="breadcrumb">
+                        <li><a href="index.html">主 页</a></li>
+                        <li class="active">账户</li>
+                    </ol>
+                </div>
             </div>
         </div>
-    </div>
-    <!--end-breadcrumbs-->
-    <!--account-starts-->
-    <div class="account">
-        <div class="container">
-            <div class="account-top heading">
-                <h2>账户</h2>
-            </div>
-            <div class="account-main">
-                <div class="col-md-6 account-left">
-                    <h3>现有用户</h3>
-                    <div class="account-bottom">
-                        <input placeholder="Email" type="text" tabindex="3" class="uname qq" required>
-                        <input placeholder="Password" type="password" tabindex="4" class="upwd qq" required>
-                        <div class="address">
-                            <a class="forgot" href="#">忘记密码?</a>
-                            <input type="submit" value="登录" class="btn_login">
-                            <div class='q' style="height: 20px; width: 300px;color: red;"></div>
+        <!--end-breadcrumbs-->
+        <!--account-starts-->
+        <div class="account">
+            <div class="container">
+                <div class="account-top heading">
+                    <h2>账户</h2>
+                </div>
+                <div class="account-main">
+                    <div class="col-md-6 account-left">
+                        <h3>现有用户</h3>
+                        <div class="account-bottom">
+                            <input placeholder="Email" type="text" tabindex="3" class="uname qq" required>
+                            <input placeholder="Password" type="password" tabindex="4" class="upwd qq" required>
+                            <div class="address">
+                                <a class="forgot" href="#">忘记密码?</a>
+                                <input type="submit" value="登录" class="btn_login">
+                                <div class='q' style="height: 20px; width: 300px;color: red;"></div>
+                            </div>
                         </div>
                     </div>
+                    <script>
+                        $(".btn_login").click(function () {
+                            var name = $(".uname").val()
+                            var pwd = $(".upwd").val()
+                            if (name == "tom" && pwd == "tom") {
+                                window.location.href = "index.html";
+                            } else {
+                                $(".q").html("登录失败，用户名或者密码错误！！")
+                            }
+                        })
+                        $(".qq").focus(function () {
+                            $(".q").html("")
+                        })
+                    </script>
+                    <div class="col-md-6 account-right account-left">
+                        <h3>新的用户？创建一个帐户</h3>
+                        <p>通过在我们的商店中创建帐户，您将能够更快地完成结帐流程，存储多个送货地址，查看和跟踪帐户中的订单等等。</p>
+                        <a href="register.html">创建账户</a>
+                    </div>
+                    <div class="clearfix"></div>
                 </div>
-                <script>
-                    $(".btn_login").click(function() {
-                        var name = $(".uname").val()
-                        var pwd = $(".upwd").val()
-                        if (name == "tom" && pwd == "tom") {
-                            window.location.href = "index.html";
-                        } else {
-                            $(".q").html("登录失败，用户名或者密码错误！！")
-                        }
-                    })
-                    $(".qq").focus(function() {
-                        $(".q").html("")
-                    })
-                </script>
-                <div class="col-md-6 account-right account-left">
-                    <h3>新的用户？创建一个帐户</h3>
-                    <p>通过在我们的商店中创建帐户，您将能够更快地完成结帐流程，存储多个送货地址，查看和跟踪帐户中的订单等等。</p>
-                    <a href="register.html">创建账户</a>
-                </div>
-                <div class="clearfix"></div>
             </div>
         </div>
-    </div>
-    <!--account-end-->
-    <!--information-starts-->
-    <div class="information">
-        <div class="container">
-            <div class="infor-top">
-                <div class="col-md-3 infor-left">
-                    <h3>需要帮助？</h3>
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <p><span class="iconfont icon-dianhua"></span>请致电我们 4006001913</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <p><span class="iconfont icon--kefu"></span>与客户服务人员沟通</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <p><span class="iconfont icon-youjian"></span>联系我们</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="contact.html">
-                                <p><span class="iconfont icon-weizhi"></span>查找精品店</p>
-                            </a>
-                        </li>
-                    </ul>
+        <!--account-end-->
+        <!--information-starts-->
+        <div class="information">
+            <div class="container">
+                <div class="infor-top">
+                    <div class="col-md-3 infor-left">
+                        <h3>需要帮助？</h3>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <p><span class="iconfont icon-dianhua"></span>请致电我们 4006001913</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p><span class="iconfont icon--kefu"></span>与客户服务人员沟通</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p><span class="iconfont icon-youjian"></span>联系我们</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="contact.html">
+                                    <p><span class="iconfont icon-weizhi"></span>查找精品店</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 infor-left">
+                        <h3>公司</h3>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <p>Unnamed集团</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>Unnamed基金会</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>Luna Rossa</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="contact.html">
+                                    <p>持续性</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>工作机会</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 infor-left">
+                        <h3>法律条款</h3>
+                        <ul>
+                            <li>
+                                <a href="account.html">
+                                    <p>法务通知</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>隐私政策</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>Cookie政策</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>销售条款</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>网站地图</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 infor-left">
+                        <h3>专属服务</h3>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <p><span class="iconfont icon-dianhua"></span>免费标准配送</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p><span class="iconfont icon--kefu"></span>免费礼品包装</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p><span class="iconfont icon-youjian"></span>预约门店服务</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
                 </div>
-                <div class="col-md-3 infor-left">
-                    <h3>公司</h3>
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <p>Unnamed集团</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <p>Unnamed基金会</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <p>Luna Rossa</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="contact.html">
-                                <p>持续性</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <p>工作机会</p>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-3 infor-left">
-                    <h3>法律条款</h3>
-                    <ul>
-                        <li>
-                            <a href="account.html">
-                                <p>法务通知</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <p>隐私政策</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <p>Cookie政策</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <p>销售条款</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <p>网站地图</p>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-3 infor-left">
-                    <h3>专属服务</h3>
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <p><span class="iconfont icon-dianhua"></span>免费标准配送</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <p><span class="iconfont icon--kefu"></span>免费礼品包装</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <p><span class="iconfont icon-youjian"></span>预约门店服务</p>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="clearfix"></div>
             </div>
         </div>
-    </div>
-    <!--information-end-->
-    <!--footer-starts-->
-    <div class="footer">
-        <div class="container">
-            <div class="footer-top">
-                <div class="col-md-6 footer-left">
-                    <form>
-                        <input type="text" value="Enter Your Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter Your Email';}">
-                        <input type="submit" value="订阅">
-                    </form>
+        <!--information-end-->
+        <!--footer-starts-->
+        <div class="footer">
+            <div class="container">
+                <div class="footer-top">
+                    <div class="col-md-6 footer-left">
+                        <form>
+                            <input type="text" value="Enter Your Email" onfocus="this.value = '';"
+                                onblur="if (this.value == '') {this.value = 'Enter Your Email';}">
+                            <input type="submit" value="订阅">
+                        </form>
+                    </div>
+                    <div class="col-md-6 footer-right">
+                        <strong>配送至 中国大陆/简体中文
+                            <a target="_blank" href="http://sc.chinaz.com/moban/"></a>
+                        </strong>
+                    </div>
+                    <div class="clearfix"></div>
                 </div>
-                <div class="col-md-6 footer-right">
-                    <strong>配送至 中国大陆/简体中文
-                        <a target="_blank" href="http://sc.chinaz.com/moban/"></a>
-                    </strong>
-                </div>
-                <div class="clearfix"></div>
             </div>
         </div>
+        <!--footer-end-->
     </div>
-    <!--footer-end-->
 </body>
 
 </html>

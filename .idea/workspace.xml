@@ -10,28 +10,28 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="FavoritesManager">
-    <favorites_list name="moban769" />
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="21XcCTADMemIB6bYjTfQrAfM36X" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="FullScreen" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SearchEverywhereHistoryKey" value="img&#9;FILE&#9;file://D:/动态前端/前端实训/images/timg.jpg" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../jquerylbtzh" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -40,14 +40,18 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Desktop\前端实训-12.05\css" />
+      <recent name="D:\Desktop\前端实训-12.05\js" />
+      <recent name="D:\Desktop\前端实训-12.05\images" />
+      <recent name="D:\Desktop\前端实训-11.30\css" />
+      <recent name="D:\Desktop\前端实训-11.30\images" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\前端实训-11.30" />
       <recent name="D:\动态前端\moban769\js" />
       <recent name="D:\动态前端\moban769\images" />
       <recent name="D:\动态前端\moban769\css" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\动态前端\前端实训" />
-      <recent name="D:\动态前端" />
     </key>
   </component>
   <component name="RunManager">
@@ -86,6 +90,14 @@
       <updated>1607924667251</updated>
       <workItem from="1638090746485" duration="12893000" />
       <workItem from="1638272705121" duration="3746000" />
+      <workItem from="1638685462171" duration="8209000" />
+      <workItem from="1638696045701" duration="2169000" />
+      <workItem from="1638713910910" duration="4766000" />
+      <workItem from="1638754023060" duration="811000" />
+      <workItem from="1638754871205" duration="3925000" />
+      <workItem from="1638790888786" duration="3668000" />
+      <workItem from="1638798909581" duration="5025000" />
+      <workItem from="1638857275195" duration="9291000" />
     </task>
     <servers />
   </component>
@@ -101,21 +113,17 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="428" y="194" width="670" height="676" key="search.everywhere.popup" timestamp="1638092193618">
+    <state x="945" y="403" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1638698197810">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="945" y="403" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1638698197810" />
+    <state x="247" y="188" key="FileChooserDialogImpl" timestamp="1638796865207">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="428" y="194" width="670" height="676" key="search.everywhere.popup/0.0.1280.720@0.0.1280.720" timestamp="1638092193618" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/index.html</url>
-          <line>224</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="247" y="188" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1638796865207" />
+    <state x="428" y="194" width="672" height="676" key="search.everywhere.popup" timestamp="1638864566399">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="428" y="194" width="672" height="676" key="search.everywhere.popup/0.0.1280.720@0.0.1280.720" timestamp="1638864566399" />
   </component>
 </project>

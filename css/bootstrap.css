@@ -1587,6 +1587,7 @@ pre code {
 }
 @media (min-width: 1200px) {
   .container {
+    margin-top: 5px;
     width: 1170px;
   }
 }
@@ -4859,19 +4860,27 @@ a.badge:focus {
   margin-left: 3px;
 }
 .jumbotron {
-  padding: 30px 15px;
+  padding: 0 15px;
   margin-bottom: 30px;
   color: inherit;
-  background-color: #eee;
+  background-color: rgb(20,20,20);
+  height: 340px;
 }
-.jumbotron h1,
 .jumbotron .h1 {
-  color: inherit;
+  float: left;
+  color: white;
 }
 .jumbotron p {
-  margin-bottom: 15px;
-  font-size: 21px;
+  font-size: 16px;
   font-weight: 200;
+  float: left;
+  color: white;
+}
+.jumbotron .j_h1{
+  width: 200px;
+}
+.jumbotron .j_p{
+  width: 400px;
 }
 .jumbotron > hr {
   border-top-color: #d5d5d5;
@@ -4884,9 +4893,6 @@ a.badge:focus {
   max-width: 100%;
 }
 @media screen and (min-width: 768px) {
-  .jumbotron {
-    padding: 48px 0;
-  }
   .container .jumbotron,
   .container-fluid .jumbotron {
     padding-right: 60px;
@@ -4894,7 +4900,8 @@ a.badge:focus {
   }
   .jumbotron h1,
   .jumbotron .h1 {
-    font-size: 63px;
+    font-size: 35px;
+    color: white;
   }
 }
 .thumbnail {

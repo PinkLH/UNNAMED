@@ -142,9 +142,9 @@
 	z-index:1;
 }
 .skyblue li>a,.skyblue>li.showhide span{
-	color:#000;
+	color:#ddd;
 }
-.skyblue>li:hover>a,.skyblue>li.active>a,.skyblue .dropdown li:hover>a{
+.skyblue>li:hover>a,.skyblue .dropdown li:hover>a{
 	color:#73B6E1;
 }.
 .mepanel img:hover,.skyblue form.contact input[type="text"]:focus,.skyblue form.contact textarea:focus{

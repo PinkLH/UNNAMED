@@ -58,6 +58,24 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
         });
     </script>
+    <style>
+        .skyblue li>a,
+        .skyblue>li.showhide span {
+            color: #000;
+        }
+
+        .main_m {
+            top: 220px;
+        }
+
+        .logo {
+            border-bottom: 1px solid #ddd;
+        }
+
+        .logo a h1 {
+            color: black;
+        }
+    </style>
 </head>
 
 <body>
@@ -250,507 +268,553 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </div>
     </div>
     <!--bottom-header-->
-    <!--start-breadcrumbs-->
-    <div class="breadcrumbs">
-        <div class="container">
-            <div class="breadcrumbs-main">
-                <ol class="breadcrumb">
-                    <li><a href="index.html">主页</a></li>
-                    <li class="active">商品</li>
-                </ol>
+    <div class="main_m">
+        <!--start-breadcrumbs-->
+        <div class="breadcrumbs">
+            <div class="container">
+                <div class="breadcrumbs-main">
+                    <ol class="breadcrumb">
+                        <li><a href="index.html">主页</a></li>
+                        <li class="active">商品</li>
+                    </ol>
+                </div>
             </div>
         </div>
-    </div>
-    <!--end-breadcrumbs-->
-    <!--start-single-->
-    <div class="single contact">
-        <div class="container">
-            <div class="single-main">
-                <div class="col-md-9 single-main-left">
-                    <div class="sngl-top">
-                        <div class="col-md-5 single-top-left">
-                            <div class="flexslider">
-                                <ul class="slides">
-                                    <li data-thumb="images/s-1.jpg">
-                                        <div class="thumb-image"> <img src="images/s-1.jpg" data-imagezoom="true"
-                                                class="img-responsive" alt="" /> </div>
-                                    </li>
-                                    <li data-thumb="images/s-2.jpg">
-                                        <div class="thumb-image"> <img src="images/s-2.jpg" data-imagezoom="true"
-                                                class="img-responsive" alt="" /> </div>
-                                    </li>
-                                    <li data-thumb="images/s-3.jpg">
-                                        <div class="thumb-image"> <img src="images/s-3.jpg" data-imagezoom="true"
-                                                class="img-responsive" alt="" /> </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- FlexSlider -->
-                            <script src="js/imagezoom.js"></script>
-                            <script defer src="js/jquery.flexslider.js"></script>
-                            <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+        <!--end-breadcrumbs-->
+        <!--start-single-->
+        <div class="single contact">
+            <div class="container">
+                <div class="single-main">
+                    <div class="col-md-9 single-main-left">
+                        <div class="sngl-top">
+                            <div class="col-md-5 single-top-left">
+                                <div class="flexslider">
+                                    <ul class="slides">
+                                        <li data-thumb="images/s-1.jpg">
+                                            <div class="thumb-image"> <img src="images/s-1.jpg" data-imagezoom="true"
+                                                    class="img-responsive" alt="" /> </div>
+                                        </li>
+                                        <li data-thumb="images/s-2.jpg">
+                                            <div class="thumb-image"> <img src="images/s-2.jpg" data-imagezoom="true"
+                                                    class="img-responsive" alt="" /> </div>
+                                        </li>
+                                        <li data-thumb="images/s-3.jpg">
+                                            <div class="thumb-image"> <img src="images/s-3.jpg" data-imagezoom="true"
+                                                    class="img-responsive" alt="" /> </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- FlexSlider -->
+                                <script src="js/imagezoom.js"></script>
+                                <script defer src="js/jquery.flexslider.js"></script>
+                                <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
 
-                            <script>
-                                // Can also be used with $(document).ready()
-                                $(window).load(function () {
-                                    $('.flexslider').flexslider({
-                                        animation: "slide",
-                                        controlNav: "thumbnails"
+                                <script>
+                                    // Can also be used with $(document).ready()
+                                    $(window).load(function () {
+                                        $('.flexslider').flexslider({
+                                            animation: "slide",
+                                            controlNav: "thumbnails"
+                                        });
                                     });
-                                });
-                            </script>
-                        </div>
-                        <div class="col-md-7 single-top-right">
-                            <div class="single-para simpleCart_shelfItem" style="background-color: hsl(36deg 19% 90%);">
-                                <h2 text-align="center" padding-left: 8%>BVLGARI BALGARI 手镯</h2>
-                                <div class="star-on">
-                                    <ul class="star-footer">
-                                        <li><a href="#"><i> </i></a></li>
-                                        <li><a href="#"><i> </i></a></li>
-                                        <li><a href="#"><i> </i></a></li>
-                                        <li><a href="#"><i> </i></a></li>
-                                        <li><a href="#"><i> </i></a></li>
-                                    </ul>
-                                    <div class="review">
-                                        <a href="#"> 1条顾客评论</a>
+                                </script>
+                            </div>
+                            <div class="col-md-7 single-top-right">
+                                <div class="single-para simpleCart_shelfItem"
+                                    style="background-color: hsl(36deg 19% 90%);">
+                                    <h2 text-align="center" padding-left: 8%>BVLGARI BALGARI 手镯</h2>
+                                    <div class="star-on">
+                                        <ul class="star-footer">
+                                            <li><a href="#"><i> </i></a></li>
+                                            <li><a href="#"><i> </i></a></li>
+                                            <li><a href="#"><i> </i></a></li>
+                                            <li><a href="#"><i> </i></a></li>
+                                            <li><a href="#"><i> </i></a></li>
+                                        </ul>
+                                        <div class="review">
+                                            <a href="#"> 1条顾客评论</a>
 
-                                    </div>
-                                    <div class="clearfix"> </div>
-                                </div>
-
-                                <h5 class="item_price">$ 32,600</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
-                                    euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
-                                <div class="available">
-                                    <ul>
-                                        <li>颜色
-                                            <select>
-                                                <option>银色</option>
-                                                <option>黑色</option>
-                                                <option>深黑色</option>
-                                                <option>红色</option>
-                                            </select>
-                                        </li>
-                                        <li class="size-in">尺寸
-                                            <select>
-                                                <option>S</option>
-                                                <option>M</option>
-                                                <option>L</option>
-                                            </select>
-                                        </li>
+                                        </div>
                                         <div class="clearfix"> </div>
-                                    </ul>
-                                </div>
-                                <!-- <ul class="tag-men">
+                                    </div>
+
+                                    <h5 class="item_price">$ 32,600</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                                        euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+                                    <div class="available">
+                                        <ul>
+                                            <li>颜色
+                                                <select>
+                                                    <option>银色</option>
+                                                    <option>黑色</option>
+                                                    <option>深黑色</option>
+                                                    <option>红色</option>
+                                                </select>
+                                            </li>
+                                            <li class="size-in">尺寸
+                                                <select>
+                                                    <option>S</option>
+                                                    <option>M</option>
+                                                    <option>L</option>
+                                                </select>
+                                            </li>
+                                            <div class="clearfix"> </div>
+                                        </ul>
+                                    </div>
+                                    <!-- <ul class="tag-men">
                                     <li><span>TAG</span>
                                         <span class="women1">: Women,</span></li>
                                     <li><span>SKU</span>
                                         <span class="women1">: CK09</span></li>
                                 </ul> -->
-                                <a href="#" class="add-cart item_add">加入购物袋</a><br />
+                                    <a href="#" class="add-cart item_add">加入购物袋</a><br />
 
+                                </div>
+                            </div>
+                            <div class="clearfix"> </div>
+                        </div>
+                        <div class="tabs">
+                            <ul class="menu_drop">
+                                <li class="item1">
+                                    <a href="#"><img src="images/arrow.png" alt="">描 述</a>
+                                    <ul>
+                                        <li class="subitem1"><a href="#">Lorem ipsum dolor sit amet, consectetuer
+                                                adipiscing
+                                                elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                                                aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
+                                                tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+                                                consequat.</a></li>
+                                        <li class="subitem2"><a href="#"> Duis autem vel eum iriure dolor in hendrerit
+                                                in
+                                                vulputate velit esse molestie consequat, vel illum dolore eu feugiat
+                                                nulla
+                                                facilisis at vero eros et accumsan et iusto odio dignissim qui blandit
+                                                praesent luptatum zzril delenit augue duis dolore</a></li>
+                                        <li class="subitem3"><a href="#">Mirum est notare quam littera gothica, quam
+                                                nunc
+                                                putamus parum claram, anteposuerit litterarum formas humanitatis per
+                                                seacula
+                                                quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur
+                                                parum clari, fiant sollemnes </a></li>
+                                    </ul>
+                                </li>
+                                <li class="item2">
+                                    <a href="#"><img src="images/arrow.png" alt="">附加信息</a>
+                                    <ul>
+                                        <li class="subitem2"><a href="#"> Duis autem vel eum iriure dolor in hendrerit
+                                                in
+                                                vulputate velit esse molestie consequat, vel illum dolore eu feugiat
+                                                nulla
+                                                facilisis at vero eros et accumsan et iusto odio dignissim qui blandit
+                                                praesent luptatum zzril delenit augue duis dolore</a></li>
+                                        <li class="subitem3"><a href="#">Mirum est notare quam littera gothica, quam
+                                                nunc
+                                                putamus parum claram, anteposuerit litterarum formas humanitatis per
+                                                seacula
+                                                quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur
+                                                parum clari, fiant sollemnes </a></li>
+                                    </ul>
+                                </li>
+                                <li class="item3">
+                                    <a href="#"><img src="images/arrow.png" alt="">评 论</a>
+                                    <ul>
+                                        <li class="subitem1"><a href="#">Lorem ipsum dolor sit amet, consectetuer
+                                                adipiscing
+                                                elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                                                aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
+                                                tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+                                                consequat.</a></li>
+                                        <li class="subitem2"><a href="#"> Duis autem vel eum iriure dolor in hendrerit
+                                                in
+                                                vulputate velit esse molestie consequat, vel illum dolore eu feugiat
+                                                nulla
+                                                facilisis at vero eros et accumsan et iusto odio dignissim qui blandit
+                                                praesent luptatum zzril delenit augue duis dolore</a></li>
+                                        <li class="subitem3"><a href="#">Mirum est notare quam littera gothica, quam
+                                                nunc
+                                                putamus parum claram, anteposuerit litterarum formas humanitatis per
+                                                seacula
+                                                quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur
+                                                parum clari, fiant sollemnes </a></li>
+                                    </ul>
+                                </li>
+                                <li class="item4">
+                                    <a href="#"><img src="images/arrow.png" alt="">其他链接</a>
+                                    <ul>
+                                        <li class="subitem2"><a href="#"> Duis autem vel eum iriure dolor in hendrerit
+                                                in
+                                                vulputate velit esse molestie consequat, vel illum dolore eu feugiat
+                                                nulla
+                                                facilisis at vero eros et accumsan et iusto odio dignissim qui blandit
+                                                praesent luptatum zzril delenit augue duis dolore</a></li>
+                                        <li class="subitem3"><a href="#">Mirum est notare quam littera gothica, quam
+                                                nunc
+                                                putamus parum claram, anteposuerit litterarum formas humanitatis per
+                                                seacula
+                                                quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur
+                                                parum clari, fiant sollemnes </a></li>
+                                    </ul>
+                                </li>
+                                <li class="item5">
+                                    <a href="#"><img src="images/arrow.png" alt="">Make A Gift</a>
+                                    <ul>
+                                        <li class="subitem1"><a href="#">Lorem ipsum dolor sit amet, consectetuer
+                                                adipiscing
+                                                elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                                                aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
+                                                tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+                                                consequat.</a></li>
+                                        <li class="subitem2"><a href="#"> Duis autem vel eum iriure dolor in hendrerit
+                                                in
+                                                vulputate velit esse molestie consequat, vel illum dolore eu feugiat
+                                                nulla
+                                                facilisis at vero eros et accumsan et iusto odio dignissim qui blandit
+                                                praesent luptatum zzril delenit augue duis dolore</a></li>
+                                        <li class="subitem3"><a href="#">Mirum est notare quam littera gothica, quam
+                                                nunc
+                                                putamus parum claram, anteposuerit litterarum formas humanitatis per
+                                                seacula
+                                                quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur
+                                                parum clari, fiant sollemnes </a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="latestproducts">
+                            <div class="product-one">
+                                <div class="col-md-4 product-left p-left">
+                                    <div class="product-main simpleCart_shelfItem">
+                                        <a href="single.html" class="mask"><img class="img-responsive zoom-img"
+                                                src="images/1.jpg" alt="" /></a>
+                                        <div class="product-bottom">
+                                            <h3>HOURGLASS 小号手袋</h3>
+                                            <p>EXPLORE NOW</p>
+                                            <h4><a class="item_add" href="#"><i></i></a> <span
+                                                    class=" item_price">￥25000</span></h4>
+                                        </div>
+                                        <div class="srch">
+                                            <span>-50%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 product-left p-left">
+                                    <div class="product-main simpleCart_shelfItem">
+                                        <a href="single.html" class="mask"><img class="img-responsive zoom-img"
+                                                src="images/2.jpg" alt="" /></a>
+                                        <div class="product-bottom">
+                                            <h3>HOURGLASS 小号手袋</h3>
+                                            <p>EXPLORE NOW</p>
+                                            <h4><a class="item_add" href="#"><i></i></a> <span
+                                                    class=" item_price">￥25000</span></h4>
+                                        </div>
+                                        <div class="srch">
+                                            <span>-50%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 product-left p-left">
+                                    <div class="product-main simpleCart_shelfItem">
+                                        <a href="single.html" class="mask"><img class="img-responsive zoom-img"
+                                                src="images/3.jpg" alt="" /></a>
+                                        <div class="product-bottom">
+                                            <h3>HOURGLASS 小号手袋</h3>
+                                            <p>EXPLORE NOW</p>
+                                            <h4><a class="item_add" href="#"><i></i></a> <span
+                                                    class=" item_price">￥25000</span></h4>
+                                        </div>
+                                        <div class="srch">
+                                            <span>-50%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
                             </div>
                         </div>
-                        <div class="clearfix"> </div>
                     </div>
-                    <div class="tabs">
-                        <ul class="menu_drop">
-                            <li class="item1">
-                                <a href="#"><img src="images/arrow.png" alt="">描 述</a>
-                                <ul>
-                                    <li class="subitem1"><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing
-                                            elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                                            aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
-                                            tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-                                            consequat.</a></li>
-                                    <li class="subitem2"><a href="#"> Duis autem vel eum iriure dolor in hendrerit in
-                                            vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla
-                                            facilisis at vero eros et accumsan et iusto odio dignissim qui blandit
-                                            praesent luptatum zzril delenit augue duis dolore</a></li>
-                                    <li class="subitem3"><a href="#">Mirum est notare quam littera gothica, quam nunc
-                                            putamus parum claram, anteposuerit litterarum formas humanitatis per seacula
-                                            quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur
-                                            parum clari, fiant sollemnes </a></li>
+                    <div class="col-md-3 single-right">
+                        <div class="w_sidebar">
+                            <section class="sky-form">
+                                <h4>Catogories</h4>
+                                <div class="row1 scroll-pane">
+                                    <div class="col col-4">
+                                        <label class="checkbox"><input type="checkbox" name="checkbox"
+                                                checked=""><i></i>All
+                                            Accessories</label>
+                                    </div>
+                                    <div class="col col-4">
+                                        <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Women
+                                            Watches</label>
+                                        <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Kids
+                                            Watches</label>
+                                        <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Men
+                                            Watches</label>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="sky-form">
+                                <h4>Brand</h4>
+                                <div class="row1 row2 scroll-pane">
+                                    <div class="col col-4">
+                                        <label class="checkbox"><input type="checkbox" name="checkbox"
+                                                checked=""><i></i>kurtas</label>
+                                    </div>
+                                    <div class="col col-4">
+                                        <label class="checkbox"><input type="checkbox"
+                                                name="checkbox"><i></i>Sonata</label>
+                                        <label class="checkbox"><input type="checkbox"
+                                                name="checkbox"><i></i>Titan</label>
+                                        <label class="checkbox"><input type="checkbox"
+                                                name="checkbox"><i></i>Casio</label>
+                                        <label class="checkbox"><input type="checkbox"
+                                                name="checkbox"><i></i>Omax</label>
+                                        <label class="checkbox"><input type="checkbox"
+                                                name="checkbox"><i></i>shree</label>
+                                        <label class="checkbox"><input type="checkbox"
+                                                name="checkbox"><i></i>Fastrack</label>
+                                        <label class="checkbox"><input type="checkbox"
+                                                name="checkbox"><i></i>Sports</label>
+                                        <label class="checkbox"><input type="checkbox"
+                                                name="checkbox"><i></i>Fossil</label>
+                                        <label class="checkbox"><input type="checkbox"
+                                                name="checkbox"><i></i>Maxima</label>
+                                        <label class="checkbox"><input type="checkbox"
+                                                name="checkbox"><i></i>Yepme</label>
+                                        <label class="checkbox"><input type="checkbox"
+                                                name="checkbox"><i></i>Citizen</label>
+                                        <label class="checkbox"><input type="checkbox"
+                                                name="checkbox"><i></i>Diesel</label>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="sky-form">
+                                <h4>Colour</h4>
+                                <ul class="w_nav2">
+                                    <li>
+                                        <a class="color1" href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a class="color2" href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a class="color3" href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a class="color4" href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a class="color5" href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a class="color6" href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a class="color7" href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a class="color8" href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a class="color9" href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a class="color10" href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a class="color12" href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a class="color13" href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a class="color14" href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a class="color15" href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a class="color5" href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a class="color6" href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a class="color7" href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a class="color8" href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a class="color9" href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a class="color10" href="#"></a>
+                                    </li>
                                 </ul>
+                            </section>
+                            <section class="sky-form">
+                                <h4>discount</h4>
+                                <div class="row1 row2 scroll-pane">
+                                    <div class="col col-4">
+                                        <label class="radio"><input type="radio" name="radio" checked=""><i></i>60 % and
+                                            above</label>
+                                        <label class="radio"><input type="radio" name="radio"><i></i>50 % and
+                                            above</label>
+                                        <label class="radio"><input type="radio" name="radio"><i></i>40 % and
+                                            above</label>
+                                    </div>
+                                    <div class="col col-4">
+                                        <label class="radio"><input type="radio" name="radio"><i></i>30 % and
+                                            above</label>
+                                        <label class="radio"><input type="radio" name="radio"><i></i>20 % and
+                                            above</label>
+                                        <label class="radio"><input type="radio" name="radio"><i></i>10 % and
+                                            above</label>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+            </div>
+        </div>
+        <!--end-single-->
+        <!--information-starts-->
+        <div class="information">
+            <div class="container">
+                <div class="infor-top">
+                    <div class="col-md-3 infor-left">
+                        <h3>需要帮助？</h3>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <p><span class="iconfont icon-dianhua"></span>请致电我们 4006001913</p>
+                                </a>
                             </li>
-                            <li class="item2">
-                                <a href="#"><img src="images/arrow.png" alt="">附加信息</a>
-                                <ul>
-                                    <li class="subitem2"><a href="#"> Duis autem vel eum iriure dolor in hendrerit in
-                                            vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla
-                                            facilisis at vero eros et accumsan et iusto odio dignissim qui blandit
-                                            praesent luptatum zzril delenit augue duis dolore</a></li>
-                                    <li class="subitem3"><a href="#">Mirum est notare quam littera gothica, quam nunc
-                                            putamus parum claram, anteposuerit litterarum formas humanitatis per seacula
-                                            quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur
-                                            parum clari, fiant sollemnes </a></li>
-                                </ul>
+                            <li>
+                                <a href="#">
+                                    <p><span class="iconfont icon--kefu"></span>与客户服务人员沟通</p>
+                                </a>
                             </li>
-                            <li class="item3">
-                                <a href="#"><img src="images/arrow.png" alt="">评 论</a>
-                                <ul>
-                                    <li class="subitem1"><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing
-                                            elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                                            aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
-                                            tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-                                            consequat.</a></li>
-                                    <li class="subitem2"><a href="#"> Duis autem vel eum iriure dolor in hendrerit in
-                                            vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla
-                                            facilisis at vero eros et accumsan et iusto odio dignissim qui blandit
-                                            praesent luptatum zzril delenit augue duis dolore</a></li>
-                                    <li class="subitem3"><a href="#">Mirum est notare quam littera gothica, quam nunc
-                                            putamus parum claram, anteposuerit litterarum formas humanitatis per seacula
-                                            quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur
-                                            parum clari, fiant sollemnes </a></li>
-                                </ul>
+                            <li>
+                                <a href="#">
+                                    <p><span class="iconfont icon-youjian"></span>联系我们</p>
+                                </a>
                             </li>
-                            <li class="item4">
-                                <a href="#"><img src="images/arrow.png" alt="">其他链接</a>
-                                <ul>
-                                    <li class="subitem2"><a href="#"> Duis autem vel eum iriure dolor in hendrerit in
-                                            vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla
-                                            facilisis at vero eros et accumsan et iusto odio dignissim qui blandit
-                                            praesent luptatum zzril delenit augue duis dolore</a></li>
-                                    <li class="subitem3"><a href="#">Mirum est notare quam littera gothica, quam nunc
-                                            putamus parum claram, anteposuerit litterarum formas humanitatis per seacula
-                                            quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur
-                                            parum clari, fiant sollemnes </a></li>
-                                </ul>
-                            </li>
-                            <li class="item5">
-                                <a href="#"><img src="images/arrow.png" alt="">Make A Gift</a>
-                                <ul>
-                                    <li class="subitem1"><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing
-                                            elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                                            aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
-                                            tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-                                            consequat.</a></li>
-                                    <li class="subitem2"><a href="#"> Duis autem vel eum iriure dolor in hendrerit in
-                                            vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla
-                                            facilisis at vero eros et accumsan et iusto odio dignissim qui blandit
-                                            praesent luptatum zzril delenit augue duis dolore</a></li>
-                                    <li class="subitem3"><a href="#">Mirum est notare quam littera gothica, quam nunc
-                                            putamus parum claram, anteposuerit litterarum formas humanitatis per seacula
-                                            quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur
-                                            parum clari, fiant sollemnes </a></li>
-                                </ul>
+                            <li>
+                                <a href="contact.html">
+                                    <p><span class="iconfont icon-weizhi"></span>查找精品店</p>
+                                </a>
                             </li>
                         </ul>
                     </div>
-                    <div class="latestproducts">
-                        <div class="product-one">
-                            <div class="col-md-4 product-left p-left">
-                                <div class="product-main simpleCart_shelfItem">
-                                    <a href="single.html" class="mask"><img class="img-responsive zoom-img"
-                                            src="images/1.jpg" alt="" /></a>
-                                    <div class="product-bottom">
-                                        <h3>HOURGLASS 小号手袋</h3>
-                                        <p>EXPLORE NOW</p>
-                                        <h4><a class="item_add" href="#"><i></i></a> <span class=" item_price">￥25000</span></h4>
-                                    </div>
-                                    <div class="srch">
-                                        <span>-50%</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 product-left p-left">
-                                <div class="product-main simpleCart_shelfItem">
-                                    <a href="single.html" class="mask"><img class="img-responsive zoom-img"
-                                            src="images/2.jpg" alt="" /></a>
-                                    <div class="product-bottom">
-                                        <h3>HOURGLASS 小号手袋</h3>
-                                        <p>EXPLORE NOW</p>
-                                        <h4><a class="item_add" href="#"><i></i></a> <span class=" item_price">￥25000</span></h4>
-                                    </div>
-                                    <div class="srch">
-                                        <span>-50%</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 product-left p-left">
-                                <div class="product-main simpleCart_shelfItem">
-                                    <a href="single.html" class="mask"><img class="img-responsive zoom-img"
-                                            src="images/3.jpg" alt="" /></a>
-                                    <div class="product-bottom">
-                                        <h3>HOURGLASS 小号手袋</h3>
-                                        <p>EXPLORE NOW</p>
-                                        <h4><a class="item_add" href="#"><i></i></a> <span class=" item_price">￥25000</span></h4>
-                                    </div>
-                                    <div class="srch">
-                                        <span>-50%</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="clearfix"></div>
-                        </div>
+                    <div class="col-md-3 infor-left">
+                        <h3>公司</h3>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <p>Unnamed集团</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>Unnamed基金会</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>Luna Rossa</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="contact.html">
+                                    <p>持续性</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>工作机会</p>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                </div>
-                <div class="col-md-3 single-right">
-                    <div class="w_sidebar">
-                        <section class="sky-form">
-                            <h4>Catogories</h4>
-                            <div class="row1 scroll-pane">
-                                <div class="col col-4">
-                                    <label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i></i>All
-                                        Accessories</label>
-                                </div>
-                                <div class="col col-4">
-                                    <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Women
-                                        Watches</label>
-                                    <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Kids
-                                        Watches</label>
-                                    <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Men
-                                        Watches</label>
-                                </div>
-                            </div>
-                        </section>
-                        <section class="sky-form">
-                            <h4>Brand</h4>
-                            <div class="row1 row2 scroll-pane">
-                                <div class="col col-4">
-                                    <label class="checkbox"><input type="checkbox" name="checkbox"
-                                            checked=""><i></i>kurtas</label>
-                                </div>
-                                <div class="col col-4">
-                                    <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Sonata</label>
-                                    <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Titan</label>
-                                    <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Casio</label>
-                                    <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Omax</label>
-                                    <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>shree</label>
-                                    <label class="checkbox"><input type="checkbox"
-                                            name="checkbox"><i></i>Fastrack</label>
-                                    <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Sports</label>
-                                    <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Fossil</label>
-                                    <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Maxima</label>
-                                    <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Yepme</label>
-                                    <label class="checkbox"><input type="checkbox"
-                                            name="checkbox"><i></i>Citizen</label>
-                                    <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Diesel</label>
-                                </div>
-                            </div>
-                        </section>
-                        <section class="sky-form">
-                            <h4>Colour</h4>
-                            <ul class="w_nav2">
-                                <li>
-                                    <a class="color1" href="#"></a>
-                                </li>
-                                <li>
-                                    <a class="color2" href="#"></a>
-                                </li>
-                                <li>
-                                    <a class="color3" href="#"></a>
-                                </li>
-                                <li>
-                                    <a class="color4" href="#"></a>
-                                </li>
-                                <li>
-                                    <a class="color5" href="#"></a>
-                                </li>
-                                <li>
-                                    <a class="color6" href="#"></a>
-                                </li>
-                                <li>
-                                    <a class="color7" href="#"></a>
-                                </li>
-                                <li>
-                                    <a class="color8" href="#"></a>
-                                </li>
-                                <li>
-                                    <a class="color9" href="#"></a>
-                                </li>
-                                <li>
-                                    <a class="color10" href="#"></a>
-                                </li>
-                                <li>
-                                    <a class="color12" href="#"></a>
-                                </li>
-                                <li>
-                                    <a class="color13" href="#"></a>
-                                </li>
-                                <li>
-                                    <a class="color14" href="#"></a>
-                                </li>
-                                <li>
-                                    <a class="color15" href="#"></a>
-                                </li>
-                                <li>
-                                    <a class="color5" href="#"></a>
-                                </li>
-                                <li>
-                                    <a class="color6" href="#"></a>
-                                </li>
-                                <li>
-                                    <a class="color7" href="#"></a>
-                                </li>
-                                <li>
-                                    <a class="color8" href="#"></a>
-                                </li>
-                                <li>
-                                    <a class="color9" href="#"></a>
-                                </li>
-                                <li>
-                                    <a class="color10" href="#"></a>
-                                </li>
-                            </ul>
-                        </section>
-                        <section class="sky-form">
-                            <h4>discount</h4>
-                            <div class="row1 row2 scroll-pane">
-                                <div class="col col-4">
-                                    <label class="radio"><input type="radio" name="radio" checked=""><i></i>60 % and
-                                        above</label>
-                                    <label class="radio"><input type="radio" name="radio"><i></i>50 % and above</label>
-                                    <label class="radio"><input type="radio" name="radio"><i></i>40 % and above</label>
-                                </div>
-                                <div class="col col-4">
-                                    <label class="radio"><input type="radio" name="radio"><i></i>30 % and above</label>
-                                    <label class="radio"><input type="radio" name="radio"><i></i>20 % and above</label>
-                                    <label class="radio"><input type="radio" name="radio"><i></i>10 % and above</label>
-                                </div>
-                            </div>
-                        </section>
+                    <div class="col-md-3 infor-left">
+                        <h3>法律条款</h3>
+                        <ul>
+                            <li>
+                                <a href="account.html">
+                                    <p>法务通知</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>隐私政策</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>Cookie政策</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>销售条款</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>网站地图</p>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
+                    <div class="col-md-3 infor-left">
+                        <h3>专属服务</h3>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <p><span class="iconfont icon-dianhua"></span>免费标准配送</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p><span class="iconfont icon--kefu"></span>免费礼品包装</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p><span class="iconfont icon-youjian"></span>预约门店服务</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
                 </div>
-                <div class="clearfix"> </div>
             </div>
         </div>
-    </div>
-    <!--end-single-->
-    <!--information-starts-->
-    <div class="information">
-        <div class="container">
-            <div class="infor-top">
-                <div class="col-md-3 infor-left">
-                    <h3>需要帮助？</h3>
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <p><span class="iconfont icon-dianhua"></span>请致电我们 4006001913</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <p><span class="iconfont icon--kefu"></span>与客户服务人员沟通</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <p><span class="iconfont icon-youjian"></span>联系我们</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="contact.html">
-                                <p><span class="iconfont icon-weizhi"></span>查找精品店</p>
-                            </a>
-                        </li>
-                    </ul>
+        <!--information-end-->
+        <!--footer-starts-->
+        <div class="footer">
+            <div class="container">
+                <div class="footer-top">
+                    <div class="col-md-6 footer-left">
+                        <form>
+                            <input type="text" value="Enter Your Email" onfocus="this.value = '';"
+                                onblur="if (this.value == '') {this.value = 'Enter Your Email';}">
+                            <input type="submit" value="订阅">
+                        </form>
+                    </div>
+                    <div class="col-md-6 footer-right">
+                        <strong>配送至 中国大陆/简体中文
+                            <a target="_blank" href="http://sc.chinaz.com/moban/"></a>
+                        </strong>
+                    </div>
+                    <div class="clearfix"></div>
                 </div>
-                <div class="col-md-3 infor-left">
-                    <h3>公司</h3>
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <p>Unnamed集团</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <p>Unnamed基金会</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <p>Luna Rossa</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="contact.html">
-                                <p>持续性</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <p>工作机会</p>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-3 infor-left">
-                    <h3>法律条款</h3>
-                    <ul>
-                        <li>
-                            <a href="account.html">
-                                <p>法务通知</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <p>隐私政策</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <p>Cookie政策</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <p>销售条款</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <p>网站地图</p>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-3 infor-left">
-                    <h3>专属服务</h3>
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <p><span class="iconfont icon-dianhua"></span>免费标准配送</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <p><span class="iconfont icon--kefu"></span>免费礼品包装</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <p><span class="iconfont icon-youjian"></span>预约门店服务</p>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="clearfix"></div>
             </div>
         </div>
+        <!--footer-end-->
     </div>
-    <!--information-end-->
-    <!--footer-starts-->
-    <div class="footer">
-        <div class="container">
-            <div class="footer-top">
-                <div class="col-md-6 footer-left">
-                    <form>
-                        <input type="text" value="Enter Your Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter Your Email';}">
-                        <input type="submit" value="订阅">
-                    </form>
-                </div>
-                <div class="col-md-6 footer-right">
-                    <strong>配送至 中国大陆/简体中文
-                        <a target="_blank" href="http://sc.chinaz.com/moban/"></a>
-                    </strong>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-        </div>
-    </div>
-    <!--footer-end-->
 </body>
 
 </html>

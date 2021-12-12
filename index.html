@@ -32,7 +32,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <script type="text/javascript" src="js/qiang.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             $(".memenu").memenu();
         });
     </script>
@@ -41,6 +41,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </head>
 
 <body>
+    <!--video-starts-->
+    <div class="bnr video" id="home">
+        <div id="top" class="callbacks_container">
+            <video autoplay="autoplay" muted="muted" loop="loop" playsinline="true">
+                <source src="images/loop.webm" type="video/mp4">
+            </video>
+        </div>
+        <div class="clearfix"> </div>
+    </div>
+    <div class="v_text">
+        <h1>Unamed 2021假日系列</h1>
+        <h4>探索假日特别系列</h4>
+    </div>
+    <!--video-ends-->
     <!--top-header-->
     <div class="top-header">
         <div class="container">
@@ -60,7 +74,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <div class="cart box_1">
                         <a href="checkout.html">
                             <div class="total">
-                                <span class="simpleCart_total"></span></div>
+                                <span class="simpleCart_total"></span>
+                            </div>
                             <img src="images/cart-1.png" alt="" />
                         </a>
                         <p><a href="checkout.html" class="simpleCart_empty">购物车</a></p>
@@ -72,6 +87,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </div>
     </div>
     <!--top-header-->
+
     <!--start-logo-->
     <div class="logo">
         <a href="index.html">
@@ -79,6 +95,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </a>
     </div>
     <!--start-logo-->
+
     <!--bottom-header-->
     <div class="header-bottom">
         <div class="container">
@@ -222,7 +239,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </div>
                 <div class="col-md-3 header-right">
                     <div class="search-bar">
-                        <input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
+                        <input type="text" value="Search" onfocus="this.value = '';"
+                            onblur="if (this.value == '') {this.value = 'Search';}">
                         <input type="submit" value="">
                     </div>
                 </div>
@@ -231,32 +249,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </div>
     </div>
     <!--bottom-header-->
-    <!--banner-starts-->
-    <div class="bnr" id="home">
-        <div id="top" class="callbacks_container">
-            <ul class="rslides" id="slider4">
-                <li>
-                    <div class="banner">
-                    </div>
-                </li>
-                <li>
-                    <div class="banner1">
-                    </div>
-                </li>
-                <li>
-                    <div class="banner2">
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="clearfix"> </div>
-    </div>
-    <!--banner-ends-->
+
+
+
     <!--Slider-Starts-Here-->
     <script src="js/responsiveslides.min.js"></script>
     <script>
         // You can also use "$(window).load(function() {"
-        $(function() {
+        $(function () {
             // Slideshow 4
             $("#slider4").responsiveSlides({
                 auto: true,
@@ -264,10 +264,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 nav: true,
                 speed: 500,
                 namespace: "callbacks",
-                before: function() {
+                before: function () {
                     $('.events').append("<li>before event fired.</li>");
                 },
-                after: function() {
+                after: function () {
                     $('.events').append("<li>after event fired.</li>");
                 }
             });
@@ -275,324 +275,402 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         });
     </script>
     <!--End-slider-script-->
-    <!--about-starts-->
-    <div class="about">
-        <div class="container">
-            <div class="about-top grid-1">
-                <div class="col-md-4 about-left">
-                    <figure class="effect-bubba">
-                        <img class="img-responsive" src="images/行2-1.jpg" alt="" />
-                        <figcaption>
-                            <h2>Variation imagination</h2>
-                            <p>misappropriation of fashion creativity as the index creates a new attitude.</p>
-                        </figcaption>
-                    </figure>
+
+
+    <div class="main_m">
+        <!--banner-starts-->
+
+        <div class="rowa" id="rowa">
+            <div class="rowa_text">
+                <div class="rowa_text_main">
+                    <div class="rtext">
+                        <h2>节日甄礼</h2>
+                        <p>四个精选系列，化身男女甄礼佳品，满足不同的品味与喜好。</p>
+                    </div>
+                    <div class="rbutton">
+                        <a href="products.html">
+                            <span class="rbutton_bgc"></span>
+                            <span class="rbutton_text">立即购买</span>
+                        </a>
+                    </div>
+
                 </div>
-                <div class="col-md-4 about-left">
-                    <figure class="effect-bubba">
-                        <img class="img-responsive" src="images/行2-2.jpg" alt="" />
-                        <figcaption>
-                            <h4>Penetration challenge</h4>
-                            <p>Pay tribute to the past and present with the brand's 100 year history</p>
-                        </figcaption>
-                    </figure>
+            </div>
+            <div class="boxa" id="boxa">
+                <div class="boxa1" id="boxa1">
+                    <a href="single.html"><img src="images/轮播-1.jpg" alt=""></a>
+                    <a href="single.html"><img src="images/轮播-2.jpg" alt=""></a>
+                    <a href="single.html"><img src="images/轮播-3.jpg" alt=""></a>
+                    <a href="single.html"><img src="images/轮播-4.jpg" alt=""></a>
+                    <a href="single.html"><img src="images/轮播-5.jpg" alt=""></a>
+                    <a href="single.html"><img src="images/轮播-6.jpg" alt=""></a>
                 </div>
-                <div class="col-md-4 about-left">
-                    <figure class="effect-bubba">
-                        <img class="img-responsive" src="images/行2-3.jpg" alt=""/>
-                        <figcaption>
-                            <h4>The Hacker Project</h4>
-                            <p>collide with a diversified aria under the bold inspiration</p>
-                        </figcaption>
-                    </figure>
+                <div class="boxa2" id="boxa2">
+                    <a href="single.html"><img src="images/轮播-1.jpg" alt=""></a>
+                    <a href="single.html"><img src="images/轮播-2.jpg" alt=""></a>
+                    <a href="single.html"><img src="images/轮播-3.jpg" alt=""></a>
+                    <a href="single.html"><img src="images/轮播-4.jpg" alt=""></a>
+                    <a href="single.html"><img src="images/轮播-5.jpg" alt=""></a>
+                    <a href="single.html"><img src="images/轮播-6.jpg" alt=""></a>
                 </div>
-                <div class="clearfix"></div>
             </div>
         </div>
-    </div>
-    <!--about-end-->
-    <!--product-starts-->
-    <div class="product">
-        <div class="container">
-            <div class="product-top" style="margin-bottom: 60px;">
-                <div class="product-one">
-                    <div class="col-md-3 product-left">
-                        <div class="product-main simpleCart_shelfItem">
-                            <a href="single.html" class="mask"><img class="img-responsive zoom-img" src="images/1.jpg" alt="" /></a>
-                            <div class="product-bottom">
-                                <h3>HOURGLASS 小号手袋</h3>
-                                <p>Explore Now</p>
-                                <h4><a class="item_add" href="#"><i></i></a> <span class=" item_price">￥ 25000</span></h4>
-                            </div>
-                            <div class="srch">
-                                <span>-50%</span>
-                            </div>
-                        </div>
+        <script>
+            var _boxa1 = document.getElementById("boxa1");
+            var _boxa2 = document.getElementById("boxa2");
+            var x = 0;
+            var fun = function () {
+                _boxa1.style.left = x + 'px';
+                _boxa2.style.left = (x + 2610) + 'px';
+                x--;
+                if ((x + 2610) == 0) {
+                    x = 0;
+                }
+            }
+            setInterval(fun, 8);
+        </script>
+        <!--banner-ends-->
+        <!--about-starts-->
+        <div class="about">
+            <div class="container">
+                <div class="about-top grid-1">
+                    <div class="col-md-4 about-left">
+                        <figure class="effect-bubba">
+                            <img class="img-responsive" src="images/行2-1.jpg" alt="" />
+                            <figcaption>
+                                <h2>Variation imagination</h2>
+                                <p>misappropriation of fashion creativity as the index creates a new attitude.</p>
+                            </figcaption>
+                        </figure>
                     </div>
-                    <div class="col-md-3 product-left">
-                        <div class="product-main simpleCart_shelfItem">
-                            <a href="single.html" class="mask"><img class="img-responsive zoom-img" src="images/2.jpg" alt="" /></a>
-                            <div class="product-bottom">
-                                <h3>HOURGLASS 小号手袋</h3>
-                                <p>Explore Now</p>
-                                <h4><a class="item_add" href="#"><i></i></a> <span class=" item_price">￥ 25000</span></h4>
-                            </div>
-                            <div class="srch">
-                                <span>-50%</span>
-                            </div>
-                        </div>
+                    <div class="col-md-4 about-left">
+                        <figure class="effect-bubba">
+                            <img class="img-responsive" src="images/行2-2.jpg" alt="" />
+                            <figcaption>
+                                <h4>Penetration challenge</h4>
+                                <p>Pay tribute to the past and present with the brand's 100 year history</p>
+                            </figcaption>
+                        </figure>
                     </div>
-                    <div class="col-md-3 product-left">
-                        <div class="product-main simpleCart_shelfItem">
-                            <a href="single.html" class="mask"><img class="img-responsive zoom-img" src="images/3.jpg" alt="" /></a>
-                            <div class="product-bottom">
-                                <h3>HOURGLASS 小号手袋</h3>
-                                <p>Explore Now</p>
-                                <h4><a class="item_add" href="#"><i></i></a> <span class=" item_price">￥ 25000</span></h4>
-                            </div>
-
-                            <div class="srch">
-                                <span>-50%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 product-left">
-                        <div class="product-main simpleCart_shelfItem">
-                            <a href="single.html" class="mask"><img class="img-responsive zoom-img" src="images/4.jpg" alt="" /></a>
-                            <div class="product-bottom">
-                                <h3>HOURGLASS 小号手袋</h3>
-                                <p>Explore Now</p>
-                                <h4><a class="item_add" href="#"><i></i></a> <span class=" item_price">￥ 25000</span></h4>
-                            </div>
-                            <div class="srch">
-                                <span>-50%</span>
-                            </div>
-                        </div>
+                    <div class="col-md-4 about-left">
+                        <figure class="effect-bubba">
+                            <img class="img-responsive" src="images/行2-3.jpg" alt="" />
+                            <figcaption>
+                                <h4>The Hacker Project</h4>
+                                <p>collide with a diversified aria under the bold inspiration</p>
+                            </figcaption>
+                        </figure>
                     </div>
                     <div class="clearfix"></div>
                 </div>
-                <div class="product-one">
-                    <div class="col-md-3 product-left">
-                        <div class="product-main simpleCart_shelfItem">
-                            <a href="single.html" class="mask"><img class="img-responsive zoom-img" src="images/5.jpg" alt="" /></a>
-                            <div class="product-bottom">
-                                <h3>HOURGLASS 小号手袋</h3>
-                                <p>Explore Now</p>
-                                <h4><a class="item_add" href="#"><i></i></a> <span class=" item_price">￥ 25000</span></h4>
-                            </div>
-                            <div class="srch">
-                                <span>-50%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 product-left">
-                        <div class="product-main simpleCart_shelfItem">
-                            <a href="single.html" class="mask"><img class="img-responsive zoom-img" src="images/6.jpg" alt="" /></a>
-                            <div class="product-bottom">
-                                <h3>HOURGLASS 小号手袋</h3>
-                                <p>Explore Now</p>
-                                <h4><a class="item_add" href="#"><i></i></a> <span class=" item_price">￥ 25000</span></h4>
-                            </div>
-                            <div class="srch">
-                                <span>-50%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 product-left">
-                        <div class="product-main simpleCart_shelfItem">
-                            <a href="single.html" class="mask"><img class="img-responsive zoom-img" src="images/7.jpg" alt="" /></a>
-                            <div class="product-bottom">
-                                <h3>HOURGLASS 小号手袋</h3>
-                                <p>Explore Now</p>
-                                <h4><a class="item_add" href="#"><i></i></a> <span class=" item_price">￥ 25000</span></h4>
-                            </div>
-                            <div class="srch">
-                                <span>-50%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 product-left">
-                        <div class="product-main simpleCart_shelfItem">
-                            <a href="single.html" class="mask"><img class="img-responsive zoom-img" src="images/8.jpg" alt="" /></a>
-                            <div class="product-bottom">
-                                <h3>HOURGLASS 小号手袋</h3>
-                                <p>Explore Now</p>
-                                <h4><a class="item_add" href="#"><i></i></a> <span class=" item_price">￥ 25000</span></h4>
-                            </div>
-                            <div class="srch">
-                                <span>-50%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="clearfix">
-                    </div>
-
-                    <div class="se-kl">
-                        <div class="se-cn">倒计时</div>
-                        <div class="se-en">COUNT DOWN</div>
-                        <i class="se-io"></i>
-                        <div class="se-info">距离结束还剩</div>
-                        <div class="se-count">
-                            <div class="se-day"></div>
-                            <div class="se-hour"><span class="se-txt">00</span></div>
-                            <div class="se-min"><span class="se-txt">00</span></div>
-                            <div class="se-sec"><span class="se-txt">00</span></div>
-                        </div>
-
-                        <div id="box">
-                            <pre class="prev">prev</pre>
-                            <pre class="next">next</pre>
-                            <ul>
-                                <li><img src="images/轮播-1.jpg" /></li>
-                                <li><img src="images/轮播-2.jpg" /></li>
-                                <li><img src="images/轮播-3.jpg" /></li>
-                                <li><img src="images/轮播-4.jpg" /></li>
-                                <li><img src="images/轮播-5.jpg" /></li>
-                                <li><img src="images/轮播-6.jpg" /></li>
-
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
             </div>
+        </div>
+        <!--about-end-->
 
+        <!--product-starts-->
+        <div class="product">
+            <div class="container">
+                <div class="product-top" style="margin-bottom: 60px;">
+                    <div class="product-one">
+                        <div class="col-md-3 product-left">
+                            <div class="product-main simpleCart_shelfItem">
+                                <a href="single.html" class="mask"><img class="img-responsive zoom-img"
+                                        src="images/1.jpg" alt="" /></a>
+                                <div class="product-bottom">
+                                    <h3>HOURGLASS 小号手袋</h3>
+                                    <p>Explore Now</p>
+                                    <h4><a class="item_add" href="#"><i></i></a> <span class=" item_price">￥
+                                            25000</span></h4>
+                                </div>
+                                <div class="srch">
+                                    <span>-50%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 product-left">
+                            <div class="product-main simpleCart_shelfItem">
+                                <a href="single.html" class="mask"><img class="img-responsive zoom-img"
+                                        src="images/2.jpg" alt="" /></a>
+                                <div class="product-bottom">
+                                    <h3>HOURGLASS 小号手袋</h3>
+                                    <p>Explore Now</p>
+                                    <h4><a class="item_add" href="#"><i></i></a> <span class=" item_price">￥
+                                            25000</span></h4>
+                                </div>
+                                <div class="srch">
+                                    <span>-50%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 product-left">
+                            <div class="product-main simpleCart_shelfItem">
+                                <a href="single.html" class="mask"><img class="img-responsive zoom-img"
+                                        src="images/3.jpg" alt="" /></a>
+                                <div class="product-bottom">
+                                    <h3>HOURGLASS 小号手袋</h3>
+                                    <p>Explore Now</p>
+                                    <h4><a class="item_add" href="#"><i></i></a> <span class=" item_price">￥
+                                            25000</span></h4>
+                                </div>
 
-            <!--product-end-->
-            <!--information-starts-->
-            <div class="information">
-                <div class="container">
-                    <div class="infor-top">
-                        <div class="col-md-3 infor-left">
-                            <h3>需要帮助？</h3>
-                            <ul>
-                                <li>
-                                    <a href="#">
-                                        <p><span class="iconfont icon-dianhua"></span>请致电我们 4006001913</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <p><span class="iconfont icon--kefu"></span>与客户服务人员沟通</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <p><span class="iconfont icon-youjian"></span>联系我们</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="contact.html">
-                                        <p><span class="iconfont icon-weizhi"></span>查找精品店</p>
-                                    </a>
-                                </li>
-                            </ul>
+                                <div class="srch">
+                                    <span>-50%</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-3 infor-left">
-                            <h3>公司</h3>
-                            <ul>
-                                <li>
-                                    <a href="#">
-                                        <p>Unnamed集团</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <p>Unnamed基金会</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <p>Luna Rossa</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <p>持续性</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <p>工作机会</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-md-3 infor-left">
-                            <h3>法律条款</h3>
-                            <ul>
-                                <li>
-                                    <a href="#">
-                                        <p>法务通知</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <p>隐私政策</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <p>Cookie政策</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <p>销售条款</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <p>网站地图</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-md-3 infor-left">
-                            <h3>专属服务</h3>
-                            <ul>
-                                <li>
-                                    <a href="#">
-                                        <p><span class="iconfont icon-dianhua"></span>免费标准配送</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <p><span class="iconfont icon--kefu"></span>免费礼品包装</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <p><span class="iconfont icon-youjian"></span>预约门店服务</p>
-                                    </a>
-                                </li>
-                            </ul>
+                        <div class="col-md-3 product-left">
+                            <div class="product-main simpleCart_shelfItem">
+                                <a href="single.html" class="mask"><img class="img-responsive zoom-img"
+                                        src="images/4.jpg" alt="" /></a>
+                                <div class="product-bottom">
+                                    <h3>HOURGLASS 小号手袋</h3>
+                                    <p>Explore Now</p>
+                                    <h4><a class="item_add" href="#"><i></i></a> <span class=" item_price">￥
+                                            25000</span></h4>
+                                </div>
+                                <div class="srch">
+                                    <span>-50%</span>
+                                </div>
+                            </div>
                         </div>
                         <div class="clearfix"></div>
                     </div>
+                    <div class="product-one">
+                        <div class="col-md-3 product-left">
+                            <div class="product-main simpleCart_shelfItem">
+                                <a href="single.html" class="mask"><img class="img-responsive zoom-img"
+                                        src="images/5.jpg" alt="" /></a>
+                                <div class="product-bottom">
+                                    <h3>HOURGLASS 小号手袋</h3>
+                                    <p>Explore Now</p>
+                                    <h4><a class="item_add" href="#"><i></i></a> <span class=" item_price">￥
+                                            25000</span></h4>
+                                </div>
+                                <div class="srch">
+                                    <span>-50%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 product-left">
+                            <div class="product-main simpleCart_shelfItem">
+                                <a href="single.html" class="mask"><img class="img-responsive zoom-img"
+                                        src="images/6.jpg" alt="" /></a>
+                                <div class="product-bottom">
+                                    <h3>HOURGLASS 小号手袋</h3>
+                                    <p>Explore Now</p>
+                                    <h4><a class="item_add" href="#"><i></i></a> <span class=" item_price">￥
+                                            25000</span></h4>
+                                </div>
+                                <div class="srch">
+                                    <span>-50%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 product-left">
+                            <div class="product-main simpleCart_shelfItem">
+                                <a href="single.html" class="mask"><img class="img-responsive zoom-img"
+                                        src="images/7.jpg" alt="" /></a>
+                                <div class="product-bottom">
+                                    <h3>HOURGLASS 小号手袋</h3>
+                                    <p>Explore Now</p>
+                                    <h4><a class="item_add" href="#"><i></i></a> <span class=" item_price">￥
+                                            25000</span></h4>
+                                </div>
+                                <div class="srch">
+                                    <span>-50%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 product-left">
+                            <div class="product-main simpleCart_shelfItem">
+                                <a href="single.html" class="mask"><img class="img-responsive zoom-img"
+                                        src="images/8.jpg" alt="" /></a>
+                                <div class="product-bottom">
+                                    <h3>HOURGLASS 小号手袋</h3>
+                                    <p>Explore Now</p>
+                                    <h4><a class="item_add" href="#"><i></i></a> <span class=" item_price">￥
+                                            25000</span></h4>
+                                </div>
+                                <div class="srch">
+                                    <span>-50%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix">
+                        </div>
+
+                        <div class="se-kl">
+                            <div class="se-cn">倒计时</div>
+                            <div class="se-en">COUNT DOWN</div>
+                            <i class="se-io"></i>
+                            <div class="se-info">距离结束还剩</div>
+                            <div class="se-count">
+                                <div class="se-day"></div>
+                                <div class="se-hour"><span class="se-txt">00</span></div>
+                                <div class="se-min"><span class="se-txt">00</span></div>
+                                <div class="se-sec"><span class="se-txt">00</span></div>
+                            </div>
+
+                            <div id="box">
+                                <pre class="prev">prev</pre>
+                                <pre class="next">next</pre>
+                                <ul>
+                                    <li><img src="images/轮播-1.jpg" /></li>
+                                    <li><img src="images/轮播-2.jpg" /></li>
+                                    <li><img src="images/轮播-3.jpg" /></li>
+                                    <li><img src="images/轮播-4.jpg" /></li>
+                                    <li><img src="images/轮播-5.jpg" /></li>
+                                    <li><img src="images/轮播-6.jpg" /></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-            </div>
-            <!--information-end-->
-            <!--footer-starts-->
-            <div class="footer">
-                <div class="container">
-                    <div class="footer-top">
-                        <div class="col-md-6 footer-left">
-                            <form>
-                                <input type="text" value="Enter Your Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter Your Email';}">
-                                <input type="submit" value="订阅">
-                            </form>
+
+
+                <!--product-end-->
+
+                <!--information-starts-->
+                <div class="information">
+                    <div class="container">
+                        <div class="infor-top">
+                            <div class="col-md-3 infor-left">
+                                <h3>需要帮助？</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <p><span class="iconfont icon-dianhua"></span>请致电我们 4006001913</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <p><span class="iconfont icon--kefu"></span>与客户服务人员沟通</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <p><span class="iconfont icon-youjian"></span>联系我们</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html">
+                                            <p><span class="iconfont icon-weizhi"></span>查找精品店</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3 infor-left">
+                                <h3>公司</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <p>Unnamed集团</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <p>Unnamed基金会</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <p>Luna Rossa</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html">
+                                            <p>持续性</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <p>工作机会</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3 infor-left">
+                                <h3>法律条款</h3>
+                                <ul>
+                                    <li>
+                                        <a href="account.html">
+                                            <p>法务通知</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <p>隐私政策</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <p>Cookie政策</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <p>销售条款</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <p>网站地图</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3 infor-left">
+                                <h3>专属服务</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <p><span class="iconfont icon-dianhua"></span>免费标准配送</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <p><span class="iconfont icon--kefu"></span>免费礼品包装</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <p><span class="iconfont icon-youjian"></span>预约门店服务</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="clearfix"></div>
                         </div>
-                        <div class="col-md-6 footer-right">
-                            <strong>配送至 中国大陆/简体中文
-                                <a target="_blank" href="http://sc.chinaz.com/moban/"></a>
-                            </strong>
-                        </div>
-                        <div class="clearfix"></div>
                     </div>
                 </div>
+                <!--information-end-->
+                <!--footer-starts-->
+                <div class="footer">
+                    <div class="container">
+                        <div class="footer-top">
+                            <div class="col-md-6 footer-left">
+                                <form>
+                                    <input type="text" value="Enter Your Email" onfocus="this.value = '';"
+                                        onblur="if (this.value == '') {this.value = 'Enter Your Email';}">
+                                    <input type="submit" value="订阅">
+                                </form>
+                            </div>
+                            <div class="col-md-6 footer-right">
+                                <strong>配送至 中国大陆/简体中文
+                                    <a target="_blank" href="http://sc.chinaz.com/moban/"></a>
+                                </strong>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+                <!--footer-end-->
+
             </div>
-            <!--footer-end-->
+        </div>
+    </div>
 </body>
 
 </html>

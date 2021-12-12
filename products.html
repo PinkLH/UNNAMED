@@ -30,12 +30,30 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <link href="css/memenu.css" rel="stylesheet" type="text/css" media="all" />
     <script type="text/javascript" src="js/memenu.js"></script>
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             $(".memenu").memenu();
         });
     </script>
     <!--dropdown-->
     <script src="js/jquery.easydropdown.js"></script>
+    <style>
+        .skyblue li>a,
+        .skyblue>li.showhide span {
+            color: #000;
+        }
+
+        .main_m {
+            top: 220px;
+        }
+
+        .logo {
+            border-bottom: 1px solid #ddd;
+        }
+
+        .logo a h1 {
+            color: black;
+        }
+    </style>
 </head>
 
 <body>
@@ -58,7 +76,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <div class="cart box_1">
                         <a href="checkout.html">
                             <div class="total">
-                                <span class="simpleCart_total"></span></div>
+                                <span class="simpleCart_total"></span>
+                            </div>
                             <img src="images/cart-1.png" alt="" />
                         </a>
                         <p><a href="checkout.html" class="simpleCart_empty">购物车</a></p>
@@ -210,7 +229,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                             </ul>
                                         </div>
                                     </div>
-                            
+
                             <li class="grid"><a href="information.html">个人信息</a>
                             </li>
                         </ul>
@@ -219,7 +238,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </div>
                 <div class="col-md-3 header-right">
                     <div class="search-bar">
-                        <input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
+                        <input type="text" value="Search" onfocus="this.value = '';"
+                            onblur="if (this.value == '') {this.value = 'Search';}">
                         <input type="submit" value="">
                     </div>
                 </div>
@@ -228,366 +248,404 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </div>
     </div>
     <!--bottom-header-->
-    <!--start-breadcrumbs-->
-    <div class="breadcrumbs">
-        <div class="container">
-            <div class="breadcrumbs-main">
-                <ol class="breadcrumb">
-                    <li><a href="index.html">主页</a></li>
-                    <li class="active">商品列表</li>
-                </ol>
+    <div class="main_m">
+        <!--start-breadcrumbs-->
+        <div class="breadcrumbs">
+            <div class="container">
+                <div class="breadcrumbs-main">
+                    <ol class="breadcrumb">
+                        <li><a href="index.html">主页</a></li>
+                        <li class="active">商品列表</li>
+                    </ol>
+                </div>
             </div>
         </div>
-    </div>
-    <!--end-breadcrumbs-->
-    <!--prdt-starts-->
-    <div class="prdt">
-        <div class="container">
-            <div class="prdt-top">
-                <div class="col-md-9 prdt-left">
-                    <div class="product-one">
-                        <div class="col-md-4 product-left p-left">
-                            <div class="product-main simpleCart_shelfItem">
-                                <a href="single.html" class="mask"><img class="img-responsive zoom-img" src="images/p-1.jpg" alt="" /></a>
-                                <div class="product-bottom">
-                                    <h3>HOURGLASS 小号手袋</h3>
-                                    <p>Explore Now</p>
-                                    <h4><a class="item_add" href="#"><i></i></a> <span class=" item_price">￥ 25000</span></h4>
-                                </div>
-                                <div class="srch srch1">
-                                    <span>-50%</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 product-left p-left">
-                            <div class="product-main simpleCart_shelfItem">
-                                <a href="single.html" class="mask"><img class="img-responsive zoom-img" src="images/p-2.jpg" alt="" /></a>
-                                <div class="product-bottom">
-                                    <h3>HOURGLASS 小号手袋</h3>
-                                    <p>Explore Now</p>
-                                    <h4><a class="item_add" href="#"><i></i></a> <span class=" item_price">￥ 25000</span></h4>
-                                </div>
-                                <div class="srch srch1">
-                                    <span>-50%</span>
+        <!--end-breadcrumbs-->
+        <!--prdt-starts-->
+        <div class="prdt">
+            <div class="container">
+                <div class="prdt-top">
+                    <div class="col-md-9 prdt-left">
+                        <div class="product-one">
+                            <div class="col-md-4 product-left p-left">
+                                <div class="product-main simpleCart_shelfItem">
+                                    <a href="single.html" class="mask"><img class="img-responsive zoom-img"
+                                            src="images/p-1.jpg" alt="" /></a>
+                                    <div class="product-bottom">
+                                        <h3>HOURGLASS 小号手袋</h3>
+                                        <p>Explore Now</p>
+                                        <h4><a class="item_add" href="#"><i></i></a> <span class=" item_price">￥
+                                                25000</span></h4>
+                                    </div>
+                                    <div class="srch srch1">
+                                        <span>-50%</span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-4 product-left p-left">
-                            <div class="product-main simpleCart_shelfItem">
-                                <a href="single.html" class="mask"><img class="img-responsive zoom-img" src="images/p-3.jpg" alt="" /></a>
-                                <div class="product-bottom">
-                                    <h3>HOURGLASS 小号手袋</h3>
-                                    <p>Explore Now</p>
-                                    <h4><a class="item_add" href="#"><i></i></a> <span class=" item_price">￥ 25000</span></h4>
-                                </div>
-                                <div class="srch srch1">
-                                    <span>-50%</span>
+                            <div class="col-md-4 product-left p-left">
+                                <div class="product-main simpleCart_shelfItem">
+                                    <a href="single.html" class="mask"><img class="img-responsive zoom-img"
+                                            src="images/p-2.jpg" alt="" /></a>
+                                    <div class="product-bottom">
+                                        <h3>HOURGLASS 小号手袋</h3>
+                                        <p>Explore Now</p>
+                                        <h4><a class="item_add" href="#"><i></i></a> <span class=" item_price">￥
+                                                25000</span></h4>
+                                    </div>
+                                    <div class="srch srch1">
+                                        <span>-50%</span>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="col-md-4 product-left p-left">
+                                <div class="product-main simpleCart_shelfItem">
+                                    <a href="single.html" class="mask"><img class="img-responsive zoom-img"
+                                            src="images/p-3.jpg" alt="" /></a>
+                                    <div class="product-bottom">
+                                        <h3>HOURGLASS 小号手袋</h3>
+                                        <p>Explore Now</p>
+                                        <h4><a class="item_add" href="#"><i></i></a> <span class=" item_price">￥
+                                                25000</span></h4>
+                                    </div>
+                                    <div class="srch srch1">
+                                        <span>-50%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
                         </div>
-                        <div class="clearfix"></div>
+                        <div class="product-one">
+                            <div class="col-md-4 product-left p-left">
+                                <div class="product-main simpleCart_shelfItem">
+                                    <a href="single.html" class="mask"><img class="img-responsive zoom-img"
+                                            src="images/p-4.jpg" alt="" /></a>
+                                    <div class="product-bottom">
+                                        <h3>HOURGLASS 小号手袋</h3>
+                                        <p>Explore Now</p>
+                                        <h4><a class="item_add" href="#"><i></i></a> <span class=" item_price">￥
+                                                25000</span></h4>
+                                    </div>
+                                    <div class="srch srch1">
+                                        <span>-50%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 product-left p-left">
+                                <div class="product-main simpleCart_shelfItem">
+                                    <a href="single.html" class="mask"><img class="img-responsive zoom-img"
+                                            src="images/p-5.jpg" alt="" /></a>
+                                    <div class="product-bottom">
+                                        <h3>HOURGLASS 小号手袋</h3>
+                                        <p>Explore Now</p>
+                                        <h4><a class="item_add" href="#"><i></i></a> <span class=" item_price">￥
+                                                25000</span></h4>
+                                    </div>
+                                    <div class="srch srch1">
+                                        <span>-50%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 product-left p-left">
+                                <div class="product-main simpleCart_shelfItem">
+                                    <a href="single.html" class="mask"><img class="img-responsive zoom-img"
+                                            src="images/p-6.jpg" alt="" /></a>
+                                    <div class="product-bottom">
+                                        <h3>HOURGLASS 小号手袋</h3>
+                                        <p>Explore Now</p>
+                                        <h4><a class="item_add" href="#"><i></i></a> <span class=" item_price">￥
+                                                25000</span></h4>
+                                    </div>
+                                    <div class="srch srch1">
+                                        <span>-50%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
                     </div>
-                    <div class="product-one">
-                        <div class="col-md-4 product-left p-left">
-                            <div class="product-main simpleCart_shelfItem">
-                                <a href="single.html" class="mask"><img class="img-responsive zoom-img" src="images/p-4.jpg" alt="" /></a>
-                                <div class="product-bottom">
-                                    <h3>HOURGLASS 小号手袋</h3>
-                                    <p>Explore Now</p>
-                                    <h4><a class="item_add" href="#"><i></i></a> <span class=" item_price">￥ 25000</span></h4>
+                    <div class="col-md-3 prdt-right">
+                        <div class="w_sidebar">
+                            <section class="sky-form">
+                                <h4>Catogories</h4>
+                                <div class="row1 scroll-pane">
+                                    <div class="col col-4">
+                                        <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>All
+                                            Accessories</label>
+                                    </div>
+                                    <div class="col col-4">
+                                        <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Women
+                                        </label>
+                                        <label class="checkbox"><input type="checkbox"
+                                                name="checkbox"><i></i>Men</label>
+                                        <label class="checkbox"><input type="checkbox"
+                                                name="checkbox"><i></i>Series</label>
+                                    </div>
                                 </div>
-                                <div class="srch srch1">
-                                    <span>-50%</span>
+                            </section>
+                            <section class="sky-form">
+                                <h4>Brand</h4>
+                                <div class="row1 row2 scroll-pane">
+                                    <div class="col col-4">
+                                        <label class="checkbox"><input type="checkbox" name="checkbox"
+                                                checked=""><i></i>kurtas</label>
+                                    </div>
+                                    <div class="col col-4">
+                                        <label class="checkbox"><input type="checkbox"
+                                                name="checkbox"><i></i>BVLGARI</label>
+                                        <label class="checkbox"><input type="checkbox"
+                                                name="checkbox"><i></i>CARTIER</label>
+                                        <label class="checkbox"><input type="checkbox"
+                                                name="checkbox"><i></i>GUCCI</label>
+                                        <label class="checkbox"><input type="checkbox"
+                                                name="checkbox"><i></i>PRADA</label>
+                                        <label class="checkbox"><input type="checkbox"
+                                                name="checkbox"><i></i>HERMES</label>
+                                        <label class="checkbox"><input type="checkbox"
+                                                name="checkbox"><i></i>Fastrack</label>
+                                        <label class="checkbox"><input type="checkbox"
+                                                name="checkbox"><i></i>Sports</label>
+                                        <label class="checkbox"><input type="checkbox"
+                                                name="checkbox"><i></i>Fossil</label>
+                                        <label class="checkbox"><input type="checkbox"
+                                                name="checkbox"><i></i>Maxima</label>
+                                        <label class="checkbox"><input type="checkbox"
+                                                name="checkbox"><i></i>BALENCIAGA</label>
+                                        <label class="checkbox"><input type="checkbox"
+                                                name="checkbox"><i></i>Citizen</label>
+                                        <label class="checkbox"><input type="checkbox"
+                                                name="checkbox"><i></i>CHANL</label>
+                                    </div>
                                 </div>
-                            </div>
+                            </section>
+                            <section class="sky-form">
+                                <h4>Colour</h4>
+                                <ul class="w_nav2">
+                                    <li>
+                                        <a class="color1" href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a class="color2" href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a class="color3" href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a class="color4" href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a class="color5" href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a class="color6" href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a class="color7" href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a class="color8" href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a class="color9" href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a class="color10" href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a class="color12" href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a class="color13" href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a class="color14" href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a class="color15" href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a class="color5" href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a class="color6" href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a class="color7" href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a class="color8" href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a class="color9" href="#"></a>
+                                    </li>
+                                    <li>
+                                        <a class="color10" href="#"></a>
+                                    </li>
+                                </ul>
+                            </section>
+                            <section class="sky-form">
+                                <h4>discount</h4>
+                                <div class="row1 row2 scroll-pane">
+                                    <div class="col col-4">
+                                        <label class="radio"><input type="radio" name="radio" checked=""><i></i>60 % and
+                                            above</label>
+                                        <label class="radio"><input type="radio" name="radio"><i></i>50 % and
+                                            above</label>
+                                        <label class="radio"><input type="radio" name="radio"><i></i>40 % and
+                                            above</label>
+                                    </div>
+                                    <div class="col col-4">
+                                        <label class="radio"><input type="radio" name="radio"><i></i>30 % and
+                                            above</label>
+                                        <label class="radio"><input type="radio" name="radio"><i></i>20 % and
+                                            above</label>
+                                        <label class="radio"><input type="radio" name="radio"><i></i>10 % and
+                                            above</label>
+                                    </div>
+                                </div>
+                            </section>
                         </div>
-                        <div class="col-md-4 product-left p-left">
-                            <div class="product-main simpleCart_shelfItem">
-                                <a href="single.html" class="mask"><img class="img-responsive zoom-img" src="images/p-5.jpg" alt="" /></a>
-                                <div class="product-bottom">
-                                    <h3>HOURGLASS 小号手袋</h3>
-                                    <p>Explore Now</p>
-                                    <h4><a class="item_add" href="#"><i></i></a> <span class=" item_price">￥ 25000</span></h4>
-                                </div>
-                                <div class="srch srch1">
-                                    <span>-50%</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 product-left p-left">
-                            <div class="product-main simpleCart_shelfItem">
-                                <a href="single.html" class="mask"><img class="img-responsive zoom-img" src="images/p-6.jpg" alt="" /></a>
-                                <div class="product-bottom">
-                                    <h3>HOURGLASS 小号手袋</h3>
-                                    <p>Explore Now</p>
-                                    <h4><a class="item_add" href="#"><i></i></a> <span class=" item_price">￥ 25000</span></h4>
-                                </div>
-                                <div class="srch srch1">
-                                    <span>-50%</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="clearfix"></div>
                     </div>
+                    <div class="clearfix"></div>
                 </div>
-                <div class="col-md-3 prdt-right">
-                    <div class="w_sidebar">
-                        <section class="sky-form">
-                            <h4>Catogories</h4>
-                            <div class="row1 scroll-pane">
-                                <div class="col col-4">
-                                    <label class="checkbox"><input type="checkbox" name="checkbox" ><i></i>All Accessories</label>
-                                </div>
-                                <div class="col col-4">
-                                    <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Women </label>
-                                    <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Men</label>
-                                    <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Series</label>
-                                </div>
-                            </div>
-                        </section>
-                        <section class="sky-form">
-                            <h4>Brand</h4>
-                            <div class="row1 row2 scroll-pane">
-                                <div class="col col-4">
-                                    <label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i></i>kurtas</label>
-                                </div>
-                                <div class="col col-4">
-                                    <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>BVLGARI</label>
-                                    <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>CARTIER</label>
-                                    <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>GUCCI</label>
-                                    <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>PRADA</label>
-                                    <label class="checkbox"><input type="checkbox" name="checkbox" ><i></i>HERMES</label>
-                                    <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Fastrack</label>
-                                    <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Sports</label>
-                                    <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Fossil</label>
-                                    <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Maxima</label>
-                                    <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>BALENCIAGA</label>
-                                    <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Citizen</label>
-                                    <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>CHANL</label>
-                                </div>
-                            </div>
-                        </section>
-                        <section class="sky-form">
-                            <h4>Colour</h4>
-                            <ul class="w_nav2">
-                                <li>
-                                    <a class="color1" href="#"></a>
-                                </li>
-                                <li>
-                                    <a class="color2" href="#"></a>
-                                </li>
-                                <li>
-                                    <a class="color3" href="#"></a>
-                                </li>
-                                <li>
-                                    <a class="color4" href="#"></a>
-                                </li>
-                                <li>
-                                    <a class="color5" href="#"></a>
-                                </li>
-                                <li>
-                                    <a class="color6" href="#"></a>
-                                </li>
-                                <li>
-                                    <a class="color7" href="#"></a>
-                                </li>
-                                <li>
-                                    <a class="color8" href="#"></a>
-                                </li>
-                                <li>
-                                    <a class="color9" href="#"></a>
-                                </li>
-                                <li>
-                                    <a class="color10" href="#"></a>
-                                </li>
-                                <li>
-                                    <a class="color12" href="#"></a>
-                                </li>
-                                <li>
-                                    <a class="color13" href="#"></a>
-                                </li>
-                                <li>
-                                    <a class="color14" href="#"></a>
-                                </li>
-                                <li>
-                                    <a class="color15" href="#"></a>
-                                </li>
-                                <li>
-                                    <a class="color5" href="#"></a>
-                                </li>
-                                <li>
-                                    <a class="color6" href="#"></a>
-                                </li>
-                                <li>
-                                    <a class="color7" href="#"></a>
-                                </li>
-                                <li>
-                                    <a class="color8" href="#"></a>
-                                </li>
-                                <li>
-                                    <a class="color9" href="#"></a>
-                                </li>
-                                <li>
-                                    <a class="color10" href="#"></a>
-                                </li>
-                            </ul>
-                        </section>
-                        <section class="sky-form">
-                            <h4>discount</h4>
-                            <div class="row1 row2 scroll-pane">
-                                <div class="col col-4">
-                                    <label class="radio"><input type="radio" name="radio" checked=""><i></i>60 % and above</label>
-                                    <label class="radio"><input type="radio" name="radio"><i></i>50 % and above</label>
-                                    <label class="radio"><input type="radio" name="radio"><i></i>40 % and above</label>
-                                </div>
-                                <div class="col col-4">
-                                    <label class="radio"><input type="radio" name="radio"><i></i>30 % and above</label>
-                                    <label class="radio"><input type="radio" name="radio"><i></i>20 % and above</label>
-                                    <label class="radio"><input type="radio" name="radio"><i></i>10 % and above</label>
-                                </div>
-                            </div>
-                        </section>
+            </div>
+        </div>
+        <!--product-end-->
+        <!--information-starts-->
+        <div class="information">
+            <div class="container">
+                <div class="infor-top">
+                    <div class="col-md-3 infor-left">
+                        <h3>需要帮助？</h3>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <p><span class="iconfont icon-dianhua"></span>请致电我们 4006001913</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p><span class="iconfont icon--kefu"></span>与客户服务人员沟通</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p><span class="iconfont icon-youjian"></span>联系我们</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="contact.html">
+                                    <p><span class="iconfont icon-weizhi"></span>查找精品店</p>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
+                    <div class="col-md-3 infor-left">
+                        <h3>公司</h3>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <p>Unnamed集团</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>Unnamed基金会</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>Luna Rossa</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="contact.html">
+                                    <p>持续性</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>工作机会</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 infor-left">
+                        <h3>法律条款</h3>
+                        <ul>
+                            <li>
+                                <a href="account.html">
+                                    <p>法务通知</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>隐私政策</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>Cookie政策</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>销售条款</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>网站地图</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 infor-left">
+                        <h3>专属服务</h3>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <p><span class="iconfont icon-dianhua"></span>免费标准配送</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p><span class="iconfont icon--kefu"></span>免费礼品包装</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p><span class="iconfont icon-youjian"></span>预约门店服务</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
                 </div>
-                <div class="clearfix"></div>
             </div>
         </div>
-    </div>
-    <!--product-end-->
-    <!--information-starts-->
-    <div class="information">
-        <div class="container">
-            <div class="infor-top">
-                <div class="col-md-3 infor-left">
-                    <h3>需要帮助？</h3>
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <p><span class="iconfont icon-dianhua"></span>请致电我们 4006001913</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <p><span class="iconfont icon--kefu"></span>与客户服务人员沟通</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <p><span class="iconfont icon-youjian"></span>联系我们</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="contact.html">
-                                <p><span class="iconfont icon-weizhi"></span>查找精品店</p>
-                            </a>
-                        </li>
-                    </ul>
+        <!--information-end-->
+        <!--footer-starts-->
+        <div class="footer">
+            <div class="container">
+                <div class="footer-top">
+                    <div class="col-md-6 footer-left">
+                        <form>
+                            <input type="text" value="Enter Your Email" onfocus="this.value = '';"
+                                onblur="if (this.value == '') {this.value = 'Enter Your Email';}">
+                            <input type="submit" value="订阅">
+                        </form>
+                    </div>
+                    <div class="col-md-6 footer-right">
+                        <strong>配送至 中国大陆/简体中文
+                            <a target="_blank" href="http://sc.chinaz.com/moban/"></a>
+                        </strong>
+                    </div>
+                    <div class="clearfix"></div>
                 </div>
-                <div class="col-md-3 infor-left">
-                    <h3>公司</h3>
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <p>Unnamed集团</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <p>Unnamed基金会</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <p>Luna Rossa</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="contact.html">
-                                <p>持续性</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <p>工作机会</p>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-3 infor-left">
-                    <h3>法律条款</h3>
-                    <ul>
-                        <li>
-                            <a href="account.html">
-                                <p>法务通知</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <p>隐私政策</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <p>Cookie政策</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <p>销售条款</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <p>网站地图</p>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-3 infor-left">
-                    <h3>专属服务</h3>
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <p><span class="iconfont icon-dianhua"></span>免费标准配送</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <p><span class="iconfont icon--kefu"></span>免费礼品包装</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <p><span class="iconfont icon-youjian"></span>预约门店服务</p>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="clearfix"></div>
             </div>
         </div>
+        <!--footer-end-->
     </div>
-    <!--information-end-->
-    <!--footer-starts-->
-    <div class="footer">
-        <div class="container">
-            <div class="footer-top">
-                <div class="col-md-6 footer-left">
-                    <form>
-                        <input type="text" value="Enter Your Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter Your Email';}">
-                        <input type="submit" value="订阅">
-                    </form>
-                </div>
-                <div class="col-md-6 footer-right">
-                    <strong>配送至 中国大陆/简体中文
-                        <a target="_blank" href="http://sc.chinaz.com/moban/"></a>
-                    </strong>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-        </div>
-    </div>
-    <!--footer-end-->
 </body>
 
 </html>
